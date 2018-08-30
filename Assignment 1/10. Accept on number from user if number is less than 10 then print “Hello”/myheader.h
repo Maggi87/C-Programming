@@ -1,0 +1,2 @@
+
+void Accept(int iNo);

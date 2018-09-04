@@ -1,5 +1,4 @@
 #include"myheader.h"
-
 void PrintEven(int iNo1,int iNo2)
 {
 	int i = 1;

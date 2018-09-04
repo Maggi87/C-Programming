@@ -1,3 +1,5 @@
+//9. Accept one number and print that number of elements from Fibonacci series.
+
 #include<stdio.h>
 #include"myheader.h"
 int main()

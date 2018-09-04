@@ -1,3 +1,5 @@
+//7. Accept one number from user and print that number of * on screen.
+
 #include<stdio.h>
 #include"myheader.h"
 int main()

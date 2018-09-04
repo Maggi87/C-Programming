@@ -1,3 +1,5 @@
+//3. Write a program which accept two numbers from user and display its common factors.
+
 #include<stdio.h>
 #include"myheader.h"
 int main()

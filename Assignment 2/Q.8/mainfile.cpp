@@ -1,3 +1,5 @@
+//8. Accept one character from user and convert case of that character.
+
 #include<stdio.h>
 #include"myheader.h"
 int main()

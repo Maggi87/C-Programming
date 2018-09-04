@@ -1,3 +1,5 @@
+//4. Write a program which accept two numbers from user and display its largest common factors.
+
 #include<stdio.h>
 #include"myheader.h"
 int main()

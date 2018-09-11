@@ -1,5 +1,5 @@
 /*
-	5. Accept one numbers from user and return its reverse number.
+	5. Accept one numbers from user and return its reverse number.	
 */
 
 #include<stdio.h>

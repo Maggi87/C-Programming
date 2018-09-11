@@ -1,6 +1,6 @@
 /*
 	9. Write a program which accept one number from user and
-	return addition of its odd digits.
+	return addition of its odd digits.	
 */
 
 

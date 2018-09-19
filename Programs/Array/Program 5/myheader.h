@@ -10,8 +10,7 @@
 				if i is equal to  iNo
 						break loop
 				increment counter by one
-			continue	
-
+			continue				
 			return i
 		STOP
 */

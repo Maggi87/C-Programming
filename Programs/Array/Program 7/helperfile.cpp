@@ -1,9 +1,9 @@
 
 #include<stdio.h>
 #include"myheader.h";
-int AdditionArray(int *arr,int iSize)
+int frequency(int *arr,int iSize,int iNo)
 {
-	int i = 0, iSum = 0;
+	int i = 0, iSum = 0,iFrequency=0;
 	
 	if((arr==NULL)||(iSize<=0))
 	{
@@ -12,9 +12,11 @@ int AdditionArray(int *arr,int iSize)
 
 	for(i=0;i<=iSize;i++)
 	{
-		iSum = iSum + arr[i];
-	
+		if(arr[i]==iNo)
+		{
+			iFrequency++;
+		}
 	}	
 
-	return iSum;
+	return iFrequency;
 }

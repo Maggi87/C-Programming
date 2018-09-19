@@ -1,5 +1,5 @@
 /*
-	Accept array from user as well as accept one number from user and return the frequency of that number in array
+	Accept array from user as well as accept one number from userand return the frequency of that number in array
 	input : brr = {21,9,11,11,7,11,51} iNo = 11
 
 	output : 3
@@ -19,4 +19,4 @@
 	STOP
 */
 
-int AdditionArray(int *,int);
+int frequency(int *,int,int);

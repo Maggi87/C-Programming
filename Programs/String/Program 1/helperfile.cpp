@@ -6,6 +6,6 @@ void Display(char *arr)
 	while(*arr!='\0')
 	{
 		printf("%c\n",*arr);
-		*arr++;
+		arr++;
 	}
 }

@@ -1,5 +1,5 @@
 /*
-	Write a program to  accept string from user and display every character of that string saparetly
+	1) Write a program to  accept string from user and display every character of that string saparetly
 
 	input  : xyz abc
 	output : x

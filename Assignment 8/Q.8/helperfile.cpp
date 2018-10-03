@@ -1,23 +1,31 @@
+/*
+	8. Write a program which accept 5 numbers from user and return
+	largest number from them.
+	Input : 7 0 -29 27 11
+	Output : 27
+	int Maximum(int *Arr, int iSize)
+	{
+		// Logic
+	}
+*/
 #include<stdio.h>
 #include"myheader.h";
-int addition(int *arr,int iSize)
+int Maximum(int *arr,int iSize)
 {
-	int iMax = 0, iCnt = 0;
-	
-	if((arr == NULL) || (iSize<=0))
+	int i = 0, iMax = 0;
+	if((NULL == arr)||(iSize<=0))
 	{
-		return 0;
+		return -1;
 	}
 
-	for(iCnt = 0;iCnt<iSize;iCnt++)
+	iMax = arr[i];
+	for(i = 0; i<iSize; i++)
 	{
-		if(arr[iCnt] > iMax)
-		{ 
-			iMax = arr[iCnt];
+		if(arr[i]>iMax)
+		{
+			iMax = arr[i];
 		}
 	}
 
 	return iMax;
-
-
 }

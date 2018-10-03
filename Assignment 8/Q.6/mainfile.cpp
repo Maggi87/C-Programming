@@ -1,9 +1,9 @@
 ﻿/*
-	5. Write a program which accept 8 numbers from user and print
-	prime numbers from them.
-	Input : 7 45 29 31 91 28 71 11
-	Output : 7 29 31 71 11
-	void PrintPrime(int *Arr, int iSize)
+	6. Write a program which accept 8 numbers from user and print
+	number of digits of each number.
+	Input : 7 45 2991 31 91 28711 9 90
+	Output : 1 2 4 2 2 5 1 2
+	void PrintDigCount(int *Arr, int iSize)
 	{
 		// Logic
 	}
@@ -24,7 +24,7 @@ int main()
 	{
 		scanf("%d",&arr[i]);
 	}
-	PrintPrime(arr,iSize);
+	PrintDigCount(arr,iSize);
 
 	return 0;
 }

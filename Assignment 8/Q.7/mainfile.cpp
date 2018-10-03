@@ -1,9 +1,10 @@
 ﻿/*
-	5. Write a program which accept 8 numbers from user and print
-	prime numbers from them.
-	Input : 7 45 29 31 91 28 71 11
-	Output : 7 29 31 71 11
-	void PrintPrime(int *Arr, int iSize)
+	7. Write a program which accept 5 numbers from user and print
+	addition of digits of each number.
+	Input : 7 45 2991 90 27
+	Output : 7 9 21 9 9
+
+	void PrintSumDigit(int *Arr, int iSize)
 	{
 		// Logic
 	}
@@ -24,7 +25,7 @@ int main()
 	{
 		scanf("%d",&arr[i]);
 	}
-	PrintPrime(arr,iSize);
+	PrintSumDigit(arr,iSize);
 
 	return 0;
 }

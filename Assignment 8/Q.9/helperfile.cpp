@@ -1,23 +1,30 @@
+/*
+	9. Write a program which accept 5 numbers from user and return
+	smallest number from them.
+	Input : 7 0 -29 27 11
+	Output : -29
+	int Minimum(int *Arr, int iSize)
+	{
+		// Logic
+	}
+*/
 #include<stdio.h>
 #include"myheader.h";
-int addition(int *arr,int iSize)
+int Minimum(int *arr,int iSize)
 {
-	int iMax = 0, iCnt = 0;
-	
-	if((arr == NULL) || (iSize<=0))
+	int i = 0, iMin = 0;
+	if((NULL == arr)||(iSize<=0))
 	{
-		return;
+		return -1;
 	}
 
-	for(iCnt = 0;iCnt<iSize;iCnt++)
+	iMin = arr[i];
+	for(i = 0; i<iSize; i++)
 	{
-		if(arr[iCnt] < iMax)
-		{ 
-			iMax = arr[iCnt];
+		if(arr[i]<iMin)
+		{
+			iMin = arr[i];
 		}
 	}
-
-	return iMax;
-
-
+	return iMin;
 }

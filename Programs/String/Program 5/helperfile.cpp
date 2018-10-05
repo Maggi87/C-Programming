@@ -22,7 +22,7 @@ BOOL ChkPolydrom(char *str)
 		start++;
 		end--;
 	}
-	if(start>=end)
+	if(start>end)
 	{
 		return TRUE;
 	}

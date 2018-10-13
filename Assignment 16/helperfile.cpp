@@ -3,7 +3,6 @@
 void Pattern1(int iRow,int iCol)
 {
 	int i = 0, j = 0;
-
 	if(iRow<0)
 	{
 		iRow = -iRow;

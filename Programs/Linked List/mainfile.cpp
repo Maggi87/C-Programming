@@ -1,43 +1,73 @@
 ﻿#include"myheader.h"
+
 int main()
 {
-
 	BOOL Running = TRUE;
 	int iChoice = 0;
-	int  iRet = 0;
-	PNODE first = NULL;
-	printf("\n--Linked List Application --\n\n");
+	
+	printf("\n-- Singly Linear Linked List --\n");
 	while(Running)
 	{
-		printf("\n1:Inser First Element \t 2: Insert Last \t 3: Display \t 4: Count\n");
-				
-		printf("\nEnter your choice\n");
-		scanf("%d",&iChoice);		
+        PNODE first = NULL;
+		int iRet = 0;
+		int iPos = 0; 
+
+        printf("\n1: Insert First\t 2: Insert Last 3: Insert At Pos\n");
+		
+		InsertFirst(&first,11);
+        InsertFirst(&first,12);
+        InsertFirst(&first,13);
+        InsertFirst(&first,14);      
+        
+        printf("\nEnter the Choice\n");
+		scanf("%d",&iChoice);
+
 		switch(iChoice)
 		{
-			case 1:
-					InsertFirst(&first,101);
-					InsertFirst(&first,50);
-					InsertFirst(&first,60);
-					InsertFirst(&first,70);
-					break;
-			case 2:
-					InsertLast(&first,80);
-					InsertLast(&first,90);
-					InsertLast(&first,100);
-					break;
+			case 1:				                
+                Display(first);
+            	break;
+
+			 case 2:
+                InsertLast(&first,15);
+                InsertLast(&first,16);
+				Display(first);	
+				iRet = Count(first);
+				printf("Number of Node are %d \t",iRet);		
+				break;
+
 			case 3:
-					Display(first);
-					break;
+				InsertAtPos(&first,101,4);
+				Display(first);	
+		 	    break;
+
 			case 4:
-					iRet = Count(first);
-					printf("\nNumber of Element in LL:- %d\t",iRet);
-					break;
+				DeleteFirst(&first);
+				Display(first);	
+				break;
+
+			case 5:
+				DeleteLast(&first);
+				Display(first);
+				break;	
+
+			case 6:
+			   
+				printf("Enter the Position");
+				scanf("%d",&iPos);
+
+				DeleteAtPos(&first,iPos);
+				Display(first);	
+				break;
+			case 0:
+				Running = FALSE;
+				break;
+
 			default:
-					printf("Wrong choice\n");
-					break;
+				printf("Wrong choice\n");
+				break;
 		}
 	}
-	printf("\nTerminating prinnting Application....\n");
+	printf("\nTerminating Pattern prinnting Application....\n");
 	return 0;
 }

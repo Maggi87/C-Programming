@@ -90,6 +90,28 @@ int AdditionEven(PNODE head)
 	return sum;
 }
 
+int SecMaximun(PNODE head)
+{
+	int max1,max2;
+	max1 = head->data;
+	max2 = head->data;
+
+	while(head!=NULL)
+	{
+		if((head->data>max1))
+		{
+			max2 = max1;
+			max1 = head->data;
+		}
+		else if((head->data<max1)&&(head->data>max2))
+		{
+			max2 = head->data;
+		}
+		head = head->next;
+	}
+	return max2;
+}
+
 void SumDigit(PNODE head)
 {
 	int sum = 0, iDigit = 0;

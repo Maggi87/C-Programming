@@ -17,4 +17,5 @@ void Display(PNODE);
 void DisplayPerfect(PNODE);
 void DisplayPrime(PNODE);
 int AdditionEven(PNODE);
+int SecMaximun(PNODE);
 void SumDigit(PNODE);

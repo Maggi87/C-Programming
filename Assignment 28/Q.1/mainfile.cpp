@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*  1.Write a program which accept character from user and print that character 4 times
+/*  1.Write a program which accept character from user and print that character 4  times
 	using recursive approach.
 	Input : M
 	Output : M M M M

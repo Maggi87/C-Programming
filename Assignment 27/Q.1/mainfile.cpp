@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*1. Write generic program which accept one value and one number from user. Print
+/*1. Write generic program which accept one value and one number from user.   Print
 that value that number of times on screen.*/
 
 template<class T>

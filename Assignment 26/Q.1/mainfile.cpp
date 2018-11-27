@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*1.Write generic program to multiply two numbers.*/
+/*1.Write generic program to multiply two numbers.  */
 template<class T>
 T Multiply(T no1,T no2)
 {

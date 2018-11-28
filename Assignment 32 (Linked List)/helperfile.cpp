@@ -46,13 +46,13 @@ void Display(PNODE head1)
 	printf("NULL \n");	
 }
 
-void Concat(PPNODE src,PPNODE desti)
+PNODE Concat(PPNODE src,PPNODE desti)
 {
 	PNODE temp = *desti;
 	
 	if((*src == NULL)&&(*desti == NULL))
 	{
-		return;
+		return NULL;
 	}
 	else
 	{
@@ -62,15 +62,17 @@ void Concat(PPNODE src,PPNODE desti)
 		}
 		temp->next = *src;
 	}
+
+	return *desti;
 }
 
-void ConFirstN(PPNODE src,PPNODE desti,int iPos)
+PNODE ConFirstN(PPNODE src,PPNODE desti,int iPos)
 {
 	PNODE temp = *desti;
 	int i = 0;
 	if((*src == NULL)&&(*desti == NULL))
 	{
-		return;
+		return NULL;
 	}
 	else
 	{
@@ -81,16 +83,57 @@ void ConFirstN(PPNODE src,PPNODE desti,int iPos)
 		temp->next = NULL;
 		temp->next = *src;
 	}
+
+	return *desti;
 }
 
-void ConcatListRange(PPNODE src,PPNODE desti,int start,int end)
+PNODE ConcatListRange(PPNODE src,PPNODE desti,int start,int end)
 {
-
+	int i = 1;
+	PNODE temp = *src;
+	PNODE temp1 = *desti;
+	
+	while(temp1->next!=NULL)
+	{
+		temp1 = temp1->next;
+	}
+	
+	while(i<start)
+	{
+		i++;
+		temp = temp->next;
+	}	
+	
+	temp1->next = temp;
+	return *desti;
 }
 
-void LLCopy(PPNODE src,PPNODE desti)
+PNODE LLCopy(PPNODE src,PPNODE desti)
 {
-
+	PNODE newn = NULL;
+	PNODE temp = *src;
+	PNODE temp2 = *desti;
+	
+	while(temp!=NULL)
+	{
+		if(newn == NULL)
+		{
+			newn = (PNODE)malloc(sizeof(NODE));
+			newn->data = temp->data;
+			newn->next = NULL;
+			temp2 = newn;
+		}
+		else
+		{
+			temp2->next = (PNODE)malloc(sizeof(NODE));
+			temp2 = temp2->next;
+			temp2->data = temp->data;
+			temp2->next = NULL;
+		}
+		temp = temp->next;
+	}
+	
+	return *desti;
 }
 
 void LLCopyN(PPNODE src,PPNODE desti)

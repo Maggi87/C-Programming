@@ -15,8 +15,8 @@ void InsertFirst(PPNODE,int);
 void InsertSecond(PPNODE,int);
 void Display(PNODE);
 
-void Concat(PPNODE,PPNODE);
-void ConFirstN(PPNODE,PPNODE,int);
-void ConcatListRange(PPNODE,PPNODE,int,int);
-void LLCopy(PPNODE,PPNODE);
+PNODE Concat(PPNODE,PPNODE);
+PNODE ConFirstN(PPNODE,PPNODE,int);
+PNODE ConcatListRange(PPNODE,PPNODE,int,int);
+PNODE LLCopy(PPNODE,PPNODE);
 void LLCopyN(PPNODE,PPNODE);

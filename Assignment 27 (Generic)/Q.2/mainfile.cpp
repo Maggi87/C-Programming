@@ -8,7 +8,7 @@ T Count(T *arr,int iSize,T no)
 	
 	int i = 0, iCnt = 0;
 
-	for(i=0;i<iSize-1;i++)
+	for(i=0;i<iSize;i++)
 	{
 		if(arr[i] == no)
 		{
